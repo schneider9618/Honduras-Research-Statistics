@@ -1,6 +1,7 @@
 #### Load packages
 library(tidyverse)
 library(gt)
+library(writexl)
 
 #### Drop scientific notation
 options(scipen = 999)
@@ -9,8 +10,6 @@ options(scipen = 999)
 data <- read_csv(
   "/Users/anthonyschneider/Desktop/HospitalWaitTimes/Actual Research Project/WholeDataSet.csv"
 )
-
-
 
 #### CALCULATE TIME INTERVALS
 ### Calculate total emergency department length of stay for each patient
